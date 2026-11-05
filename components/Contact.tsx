@@ -31,8 +31,7 @@ export default function Contact() {
             Got a project in mind<span className="text-accent">?</span> Let&apos;s build it.
           </h2>
           <p className="mt-6 max-w-xl text-sm leading-relaxed text-muted">
-            Whether you need a new website, a system for your team, or someone to finally sort out your
-            domain and email — send me a message. I usually reply within a day.
+            Whether you need a new website or a system for your team — send me a message. I usually reply within a day.
           </p>
         </Reveal>
 

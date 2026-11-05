@@ -15,7 +15,7 @@ export default function About() {
 
         <Reveal delay={0.1}>
           <div className="rounded-lg border border-line bg-surface p-5 text-sm">
-            <p className="mb-3 text-xs text-dim">moon.json</p>
+            <p className="mb-3 text-xs text-dim">chris.json</p>
             <pre className="overflow-x-auto leading-7">
               <span className="text-muted">{"{"}</span>
               {"\n"}

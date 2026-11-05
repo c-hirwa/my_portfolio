@@ -1,4 +1,4 @@
-# moon.dev — Chris Hirwa's portfolio
+# Chris Hirwa's portfolio
 
 Next.js 16 · TypeScript · Tailwind CSS v4 · Motion. Fully static, no backend.
 

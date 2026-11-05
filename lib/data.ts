@@ -5,11 +5,11 @@
 
 export const profile = {
   name: "Chris Hirwa",
-  handle: "moon",
+  handle: "chris",
   role: "Software Engineer",
   tagline: "I build web platforms that businesses actually run on.",
   intro:
-    "Full-stack developer in Kigali. I take projects from a blank repo to a live domain — design, code, database, deployment, DNS, the lot — and I stay around after launch to keep things running.",
+    "Full-stack developer in Kigali. I take projects from a blank repo to a live product — design, code, database, deployment — and I stay around after launch to keep things running.",
   location: "Kigali, Rwanda",
   timezone: "UTC+2 (CAT)",
   email: "hirwachris301@gmail.com",
@@ -23,7 +23,7 @@ export const profile = {
 
 export const about = [
   "I started out shipping websites for small businesses at Klab, spent a couple of years doing high-volume client work at Schnell Media, and now spend most of my time building production systems — the kind with real users, real data and real deadlines.",
-  "Clients tend to stick with me because I own the whole thing end to end: if the domain breaks at 11pm or the payment flow needs rethinking, I'm the one who fixes it. I care about clean code, but I care more about whether the thing works for the people using it.",
+  "Clients tend to stick with me because I own the whole thing end to end: if something breaks at 11pm or the payment flow needs rethinking, I'm the one who fixes it. I care about clean code, but I care more about whether the thing works for the people using it.",
   "Currently studying Software Engineering at African Leadership University. Off the keyboard: basketball, game dev experiments, and too many hours reading about AI.",
 ];
 
@@ -54,12 +54,6 @@ export const services = [
     title: "E-commerce",
     body: "Storefronts with product catalogues, filtering and checkout flows that fit how your customers buy — including WhatsApp ordering.",
     tags: ["Storefronts", "Payments", "WhatsApp"],
-  },
-  {
-    id: "04",
-    title: "Migration & infrastructure",
-    body: "Moving off Wix/Squarespace-type builders, domain transfers, DNS, business email and hosting — handled without downtime.",
-    tags: ["DNS", "Email", "Deploys"],
   },
 ];
 
@@ -100,10 +94,9 @@ export const projects: Project[] = [
     client: "Lauture Global LTD",
     year: "ongoing",
     summary:
-      "Full digital infrastructure for a relocation and consulting firm — from their first custom site to CRM, SEO, email and analytics.",
+      "Full digital infrastructure for a relocation and consulting firm — from their first custom site to CRM, SEO and analytics.",
     points: [
       "Migrated the client off a website builder onto a custom-coded platform",
-      "Ran the domain transfer and DNS across multiple providers with no downtime",
       "Architecture designed to grow into a full client portal and web app",
     ],
     stack: ["Next.js", "TypeScript", "PostgreSQL", "Drizzle ORM"],
@@ -194,7 +187,7 @@ export const stack = {
   languages: ["TypeScript", "JavaScript", "Python", "SQL", "PHP", "Java", "C/C++"],
   frontend: ["Next.js", "React", "Tailwind CSS", "HTML/CSS", "Figma", "WordPress"],
   backend: ["Node.js", "PostgreSQL", "Drizzle ORM", "NextAuth", "Flask", "Supabase"],
-  ops: ["Git/GitHub", "Linux/Shell", "Vercel", "Render", "DNS & domains"],
+  ops: ["Git/GitHub", "Linux/Shell", "Vercel", "Render"],
 };
 
 export const certificates = [

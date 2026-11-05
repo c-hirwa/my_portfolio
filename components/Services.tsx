@@ -4,7 +4,7 @@ import { Reveal, SectionHead } from "./ui";
 const process = [
   { step: "discover", text: "We talk through what the business needs, not just what the site should look like." },
   { step: "build", text: "You get a working preview link early and see progress every week." },
-  { step: "launch", text: "Domain, hosting, email and analytics set up properly — I handle the technical side." },
+  { step: "launch", text: "Deployed, tested and live — I handle the technical side." },
   { step: "support", text: "I stick around for fixes, updates and the next phase." },
 ];
 
@@ -14,7 +14,7 @@ export default function Services() {
       <div className="mx-auto max-w-6xl px-4 py-24 sm:px-6 md:py-32">
         <SectionHead index="02" cmd="man services" title="What I can do for your business" />
 
-        <div className="grid gap-px overflow-hidden rounded-lg border border-line bg-line sm:grid-cols-2">
+        <div className="grid gap-px overflow-hidden rounded-lg border border-line bg-line md:grid-cols-3">
           {services.map((s, i) => (
             <Reveal key={s.id} delay={i * 0.05} className="h-full">
               <div className="flex h-full flex-col bg-bg p-6 sm:p-8">

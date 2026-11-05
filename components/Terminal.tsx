@@ -66,7 +66,6 @@ function run(raw: string): React.ReactNode | "clear" {
         </div>
       );
     case "hire":
-    case "hire moon":
       setTimeout(() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" }), 400);
       return <span className="text-accent">great choice. taking you to the contact section…</span>;
     case "hobbies":
@@ -143,7 +142,7 @@ export default function Terminal() {
           onClick={() => inputRef.current?.focus({ preventScroll: true })}
         >
           <div className="flex items-center justify-between border-b border-line bg-raised px-4 py-2.5 text-xs text-dim">
-            <span>moon@portfolio — zsh</span>
+            <span>chris@portfolio — zsh</span>
             <span className="hidden sm:inline">tab to autocomplete · ↑↓ history</span>
           </div>
           <div ref={bodyRef} className="h-80 space-y-3 overflow-y-auto p-5 text-[13px] leading-relaxed sm:text-sm">

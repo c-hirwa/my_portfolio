@@ -7,7 +7,7 @@ import { profile } from "@/lib/data";
 type Line = { cmd: string; out: React.ReactNode };
 
 const script: Line[] = [
-  { cmd: "whoami", out: <>chris hirwa <span className="text-dim">(a.k.a. moon)</span></> },
+  { cmd: "whoami", out: <>chris hirwa</> },
   {
     cmd: "cat stack.txt",
     out: <>next.js · typescript · postgres · drizzle · tailwind</>,
@@ -93,7 +93,7 @@ export default function Hero() {
             Chris Hirwa<span className="text-accent">.</span>
           </h1>
           <p className="mt-3 text-sm text-dim">
-            // {profile.role.toLowerCase()} · friends call me moon
+            // {profile.role.toLowerCase()}
           </p>
 
           <p className="mt-8 max-w-xl font-display text-xl leading-snug text-fg/90 sm:text-2xl">
@@ -138,7 +138,7 @@ export default function Hero() {
             <span className="h-3 w-3 rounded-full bg-rose/80" />
             <span className="h-3 w-3 rounded-full bg-amber/80" />
             <span className="h-3 w-3 rounded-full bg-accent/80" />
-            <span className="ml-3 text-xs text-dim">moon@kigali: ~</span>
+            <span className="ml-3 text-xs text-dim">chris@kigali: ~</span>
           </div>
           <div className="min-h-[300px] space-y-4 p-5 text-[13px] leading-relaxed sm:p-6 sm:text-sm">
             {script.map((line, i) => {
