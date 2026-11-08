@@ -3,16 +3,20 @@
 @import "@fontsource-variable/space-grotesk";
 
 @theme {
-  --color-bg: #08090a;
-  --color-surface: #0e1012;
-  --color-raised: #14171a;
-  --color-line: #1f2427;
-  --color-line-strong: #2c3337;
-  --color-fg: #e6ebe8;
-  --color-muted: #8a948f;
-  --color-dim: #5b6460;
-  --color-accent: #5df2a0;
-  --color-accent-dim: #2f8a5a;
+  --color-bg: #09080c;
+  --color-surface: #0f0e13;
+  --color-raised: #16141c;
+  --color-line: #211f29;
+  --color-line-strong: #2f2c3a;
+  --color-fg: #ecebf2;
+  --color-muted: #918ea2;
+  --color-dim: #636075;
+  /* logo colours; accent is the brand purple lifted slightly so small text stays readable */
+  --color-brand: #9b45f2;
+  --color-lavender: #8a69ca;
+  --color-slate: #77758a;
+  --color-accent: #a865f7;
+  --color-accent-dim: #5e2a99;
   --color-amber: #ffc46b;
   --color-rose: #ff7a8a;
 
@@ -53,7 +57,7 @@
 }
 
 .glow {
-  background: radial-gradient(600px circle at 30% 0%, rgb(93 242 160 / 0.08), transparent 60%);
+  background: radial-gradient(600px circle at 30% 0%, rgb(155 69 242 / 0.1), transparent 60%);
 }
 
 .caret::after {

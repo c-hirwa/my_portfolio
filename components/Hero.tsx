@@ -135,9 +135,9 @@ export default function Hero() {
           aria-label="Terminal introduction"
         >
           <div className="flex items-center gap-2 border-b border-line bg-raised px-4 py-3">
-            <span className="h-3 w-3 rounded-full bg-rose/80" />
-            <span className="h-3 w-3 rounded-full bg-amber/80" />
-            <span className="h-3 w-3 rounded-full bg-accent/80" />
+            <span className="h-3 w-3 rounded-full bg-brand" />
+            <span className="h-3 w-3 rounded-full bg-lavender" />
+            <span className="h-3 w-3 rounded-full bg-slate" />
             <span className="ml-3 text-xs text-dim">chris@kigali: ~</span>
           </div>
           <div className="min-h-[300px] space-y-4 p-5 text-[13px] leading-relaxed sm:p-6 sm:text-sm">

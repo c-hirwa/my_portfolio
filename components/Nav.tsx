@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { profile } from "@/lib/data";
+import Logo from "./Logo";
 
 const links = [
   { href: "#work", label: "work" },
@@ -29,10 +29,8 @@ export default function Nav() {
       }`}
     >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
-        <a href="#top" className="text-sm text-fg">
-          <span className="text-accent">~/</span>
-          {profile.handle}
-          <span className="text-dim">.dev</span>
+        <a href="#top" className="text-fg" aria-label="Back to top">
+          <Logo className="h-6 w-auto" />
         </a>
 
         <ul className="hidden items-center gap-7 text-sm md:flex">
