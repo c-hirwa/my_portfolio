@@ -142,6 +142,68 @@ export const projects: Project[] = [
   },
 ];
 
+export const concepts: Project[] = [
+  {
+    slug: "umuriro",
+    name: "Umuriro Grill House",
+    client: "Restaurant · Kiyovu, Kigali",
+    summary:
+      "Restaurant website, QR table ordering and a live staff dashboard — one system from the guest's phone to the kitchen.",
+    points: [
+      "Scan a table QR, order, and watch the status update live as staff move it along",
+      "Online ordering with delivery zones, scheduled times and MoMo / card / cash",
+      "Bookings for tables, weekend brunch, events and private hire in one dashboard",
+    ],
+    stack: ["Next.js", "TypeScript", "Tailwind CSS"],
+    live: "https://umuriro.vercel.app",
+    repo: "https://github.com/c-hirwa/umuriro",
+  },
+  {
+    slug: "imisozi",
+    name: "Imisozi Homes",
+    client: "Real estate agency · Kigali",
+    summary:
+      "Property site and agent dashboard for rentals and sales, with map search and viewing bookings that land straight in the agent's inbox.",
+    points: [
+      "Search and filters that live in the URL, so searches can be shared",
+      "List and map side by side with price pins, and a three-way home comparison",
+      "Agent dashboard for leads, viewings and listings — new listings go live instantly",
+    ],
+    stack: ["Next.js", "TypeScript", "Leaflet"],
+    live: "https://imisozi.vercel.app",
+    repo: "https://github.com/c-hirwa/imisozi",
+  },
+  {
+    slug: "rnn-motors",
+    name: "RNN Motors",
+    client: "Car dealership redesign · Nairobi",
+    summary:
+      "Redesign concept for a luxury car dealer: inventory site, import-cost estimator and an admin panel the sales team can run themselves.",
+    points: [
+      "Inventory with filters, a page per car, and SEO structured data",
+      "Landed-cost estimator covering Kenyan duty, excise, VAT and levies",
+      "Admin with photo uploads, stock status and an enquiries inbox",
+    ],
+    stack: ["Next.js", "Prisma", "Auth", "GSAP"],
+    live: "https://rnnmotors.vercel.app",
+    repo: "https://github.com/c-hirwa/rnn_motors",
+  },
+  {
+    slug: "ifu-bakehouse",
+    name: "Ifu Bakehouse",
+    client: "Bakery · Kigali",
+    summary:
+      "Bakery site with a menu and basket, a custom cake designer with live price, and orders sent as ready-made WhatsApp messages.",
+    points: [
+      "Cake designer with live preview and pricing",
+      "\"Next batch out of the oven\" countdown and live open/closed status",
+    ],
+    stack: ["Next.js", "TypeScript", "WhatsApp"],
+    live: "https://ifubakerhouse.vercel.app",
+    repo: "https://github.com/c-hirwa/ifu_bakerhouse",
+  },
+];
+
 export const experience = [
   {
     company: "Minetech Ltd.",

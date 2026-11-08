@@ -1,4 +1,4 @@
-import { projects } from "@/lib/data";
+import { concepts, projects } from "@/lib/data";
 import { Reveal, SectionHead, Tag } from "./ui";
 
 function Links({ live, repo }: { live?: string; repo?: string }) {
@@ -75,6 +75,44 @@ export default function Projects() {
               <p className="text-xs text-dim">{p.client}</p>
               <h3 className="mt-2 font-display text-xl font-semibold text-fg">{p.name}</h3>
               <p className="mt-2 text-sm leading-relaxed text-muted">{p.summary}</p>
+              <div className="mt-auto flex flex-wrap items-center justify-between gap-4 pt-5">
+                <div className="flex flex-wrap gap-2">
+                  {p.stack.map((s) => (
+                    <Tag key={s}>{s}</Tag>
+                  ))}
+                </div>
+                <Links live={p.live} repo={p.repo} />
+              </div>
+            </article>
+          </Reveal>
+        ))}
+      </div>
+
+      <Reveal className="mt-14">
+        <p className="text-sm text-dim">
+          <span className="text-muted">$</span> ls ./concept-builds
+        </p>
+        <p className="mt-2 mb-5 max-w-2xl text-sm leading-relaxed text-muted">
+          Working demos built for the kinds of businesses I work with. Each one is ready to adapt for a real client.
+        </p>
+      </Reveal>
+      <div className="grid gap-5 md:grid-cols-2">
+        {concepts.map((p, i) => (
+          <Reveal key={p.slug} delay={i * 0.05}>
+            <article className="flex h-full flex-col rounded-lg border border-line bg-surface/60 p-6 transition-colors hover:border-line-strong">
+              <p className="text-xs text-dim">
+                <span className="text-amber">demo</span> · {p.client}
+              </p>
+              <h3 className="mt-2 font-display text-xl font-semibold text-fg">{p.name}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-muted">{p.summary}</p>
+              <ul className="mt-4 space-y-2 text-sm leading-relaxed text-fg/80">
+                {p.points.map((pt) => (
+                  <li key={pt} className="flex gap-3">
+                    <span className="mt-px text-accent">▸</span>
+                    <span>{pt}</span>
+                  </li>
+                ))}
+              </ul>
               <div className="mt-auto flex flex-wrap items-center justify-between gap-4 pt-5">
                 <div className="flex flex-wrap gap-2">
                   {p.stack.map((s) => (
